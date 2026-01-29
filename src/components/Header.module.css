@@ -1,0 +1,39 @@
+.header {
+  background-color: #333;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.showcartbutton {
+  color: white;
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  font-size: 1.1rem;
+  display: flex;
+  gap: 0.8rem;
+}
+.cartIconAndNumber {
+  position: relative;
+}
+
+.number {
+  border: 0.5px solid white;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  background-color: red;
+  line-height: 1.7;
+  top: -13px;
+  right: -10px;
+}

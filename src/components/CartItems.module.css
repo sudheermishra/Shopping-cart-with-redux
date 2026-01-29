@@ -1,0 +1,57 @@
+.cartImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  mix-blend-mode: darken;
+}
+
+.cartitem {
+  border-bottom: 1px solid gray;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+
+.imgAndTitle {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.otherControl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.qtyItem {
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.qtyItem button,
+.removeitem {
+  border: none;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .cartitem {
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+  }
+  .otherControl {
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  .imgAndTitle {
+    gap: 1rem;
+  }
+}
