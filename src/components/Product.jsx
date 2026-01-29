@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import styles from "./product.module.css";
+import styles from "./Product.module.css";
 import { toast } from "react-toastify";
 import { addItemToCart } from "../features/cart/CartSlice";
 function Product({ id, title, price, img }) {
