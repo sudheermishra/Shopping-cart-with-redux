@@ -2,7 +2,12 @@
 
 A Cart Application built with **React + Vite** that demonstrates my understanding of **Redux Toolkit** for global state management.
 
+🔗 **Live Demo:** [https://vite-redux-cartapp.netlify.app/](https://vite-redux-cartapp.netlify.app/)
+
 ---
+
+
+
 
 ## 📌 About the Project
 
