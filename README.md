@@ -1,16 +1,135 @@
-# React + Vite
+# 🛒 Redux-Toolkit-Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Cart Application built with **React + Vite** that demonstrates my understanding of **Redux Toolkit** for global state management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 About the Project
 
-## React Compiler
+This project shows how Redux Toolkit simplifies state management in React applications. It includes a product listing page where users can add items to a cart, view cart totals, and get instant feedback through toast notifications.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ➕ Add items to cart
+- ➖ Remove items from cart
+- 🔢 Update item quantity
+- 💰 Real-time cart total calculation
+- 🔔 Toast notifications on add/remove
+- 📱 Responsive UI
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Use |
+|------------|-----|
+| React | UI components |
+| Vite | Fast development build tool |
+| Redux Toolkit | Global state management |
+| React Redux | Connect React with Redux |
+| React Toastify | Toast notifications |
+| React Icons | Icons throughout the app |
+| HTML & CSS | Structure and styling |
+| JavaScript | Logic |
+
+---
+
+## 📁 Project Structure
+
+```
+redux-toolkit-cart/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx        # Shows cart item count
+│   │   ├── ProductCard.jsx   # Individual product with Add to Cart button
+│   │   └── Cart.jsx          # Cart page with items and total
+│   ├── store/
+│   │   ├── store.js          # Redux store configuration
+│   │   └── cartSlice.js      # Cart slice with actions and reducers
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Redux Flow
+
+```
+User clicks "Add to Cart"
+        ↓
+Dispatch Action (addToCart)
+        ↓
+Reducer updates the store
+        ↓
+All components re-render with new state
+        ↓
+Toast notification shown
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/sudheermishra/Redux-Toolkit-Cart.git
+cd Redux-Toolkit-Cart
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the app
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+---
+
+## 🧠 What I Learned
+
+- How to set up a Redux store using `configureStore`
+- How to create slices using `createSlice`
+- How to use `useSelector` to read state from the store
+- How to use `useDispatch` to trigger actions
+- How to manage cart logic (add, remove, quantity update) using reducers
+
+---
+
+## 📦 Key Dependencies
+
+```json
+{
+  "@reduxjs/toolkit": "^2.x",
+  "react-redux": "^9.x",
+  "react-toastify": "^10.x",
+  "react-icons": "^5.x"
+}
+```
+
+---
+
+## 👨‍💻 Author
+
+**Sudheer Mishra**
+- GitHub: [@sudheermishra](https://github.com/sudheermishra)
+- Email: sudheermishra8587@gmail.com
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
