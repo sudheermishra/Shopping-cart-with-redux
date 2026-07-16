@@ -132,9 +132,3 @@ Open `http://localhost:5173` in your browser.
 **Sudheer Mishra**
 - GitHub: [@sudheermishra](https://github.com/sudheermishra)
 - Email: sudheermishra8587@gmail.com
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
